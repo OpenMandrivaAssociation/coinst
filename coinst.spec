@@ -2,7 +2,7 @@
 %define name coinst
 %define versionbase 1.0
 #define releasecandidate rc5
-%define release 2
+%define release 3
 #define versioncomplete %{versionbase}-%{releasecandidate}
 %define versioncomplete %{versionbase}
 
