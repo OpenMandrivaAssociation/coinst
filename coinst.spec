@@ -2,7 +2,7 @@
 %define name coinst
 %define versionbase 1.0
 #define releasecandidate rc5
-%define release 1
+%define release 2
 #define versioncomplete %{versionbase}-%{releasecandidate}
 %define versioncomplete %{versionbase}
 
@@ -62,6 +62,7 @@ The %{name}-examples package contains examples for %{name}.
 
 %files webviewer
 %{_bindir}/jsviewer.byte
+%{_datadir}/%{name}/*
 
 %prep
 %setup -q -n %{name}-%{versioncomplete}
@@ -81,4 +82,7 @@ pushd viewer
 %{__install} -m0755 -D jsviewer.byte %{buildroot}%{_bindir}/jsviewer.byte
 %{__install} -m0755 -D coinst_viewer %{buildroot}%{_bindir}/coinst_viewer
 %{__install} -m0755 -D coinst_converter %{buildroot}%{_bindir}/coinst_converter
+
+%{__install} -m0644 -D jsviewer.js %{buildroot}%{_datadir}/%{name}/jsviewer.js
+%{__install} -m0644 -D index.html %{buildroot}%{_datadir}/%{name}/index.html
 popd
