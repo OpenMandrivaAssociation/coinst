@@ -1,8 +1,8 @@
 %define debug_package %{nil}
 %define name coinst
-%define versionbase 1.0
+%define versionbase 1.01
 #define releasecandidate rc5
-%define release 3
+%define release 4
 #define versioncomplete %{versionbase}-%{releasecandidate}
 %define versioncomplete %{versionbase}
 
