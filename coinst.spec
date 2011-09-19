@@ -16,6 +16,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:            http://coinst.irill.org/
 Source0:	http://www.pps.jussieu.fr/~vouillon/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  ocaml >= 3.10.0
+BuildRequires:	camlp4
 BuildRequires:  ocaml-findlib
 BuildRequires:	ocaml-js-devel
 BuildRequires:  ocaml-cairo-devel
