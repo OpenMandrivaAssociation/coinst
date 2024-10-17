@@ -13,7 +13,7 @@ Summary:        Coinstallability kernels for GNU/Linux distributions
 Group:          Development/C
 License:        GPLv2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL:            http://coinst.irill.org/
+URL:            https://coinst.irill.org/
 Source0:	http://www.pps.jussieu.fr/~vouillon/%{name}/%{name}-%{version}.tar.gz
 BuildRequires:  ocaml >= 3.10.0
 BuildRequires:	camlp4
